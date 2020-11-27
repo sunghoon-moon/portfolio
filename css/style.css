@@ -1,0 +1,337 @@
+/* introduce */
+#introduce {
+    position: relative;
+    /* background-image: url('../images/bg.png'); */
+    width: 100%;
+    height: 140vh;
+    overflow: hidden;
+    /* background-attachment: fixed; */
+    margin: 0 auto;
+    /* background: #000; */
+}
+#introduce > .bg {
+    background-image: url('../images/bg.jpg');
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+#introduce > p {
+    position: absolute;
+    font-size: 7.2916vw;
+}
+#introduce > p:nth-child(2n - 1) {
+    color: #fff;
+    /* color: #000; */
+}
+#introduce > p:nth-child(2n)  {
+    /* 텍스트 외곽선 */
+    color: #000;
+    -webkit-text-stroke: 0.055vw #fff;
+}
+#introduce > .hi {
+    top: 10vh;
+    left: 15vw;
+}
+#introduce > .name {
+    top: 30vh;
+    right: 10vw;
+}
+#introduce > .portfolio {
+    top: 50vh;
+    right: 15vw;
+}
+#introduce > .web {
+    top: 70vh;
+    left: 15vw;
+}
+#introduce > .designer {
+    top: 90vh;
+    right: 20vw;
+}
+#introduce > .publisher {
+    top: 110vh;
+    left: 10vw;
+}
+
+/* profile */
+#about {
+    width: 100%;
+    height: 0;
+    padding-bottom: 52%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#about > .txt {
+    width: 100%;
+    height: 0;
+    padding-bottom: 23%;
+}
+#about > .txt > .typing-txt {
+    display: none;
+}
+#about > .txt > .typing > ul {
+    width: 100%;
+    height: 18.2291vh;
+    padding: 2.1621vh;
+}
+#about > .txt > .typing > ul > li {
+    display: block;
+    font-size: 3.75vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+#about > .txt > .typing > ul > li.on {  
+    display: inline-block; 
+    animation-name: cursor; 
+    animation-duration: 0.3s; 
+    animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+    0%{border-right: 1px solid #fff} 
+    50%{border-right: 1px solid #000} 
+    100%{border-right: 1px solid #fff} 
+}
+
+/* profile chart */
+#chart {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#chart li {
+    position: relative;
+    float: left;
+    width: 160px;
+    height: 160px;
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+#chart li span {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+#about > .works > marquee {
+    font-size: 7.2916vw;
+    width: 84.375vw;
+    height: 10.4166vw;
+    background: #000;
+    color: #fff;
+}
+/* #about > .works > .line {
+    width: 81.25vw;
+    height: 1px;
+    background: #000;
+    margin: 0 auto;
+} */
+
+/* works */
+#works {
+    position: relative;
+    /* background-image: url('../images/bg.png'); */
+    width: 100%;
+    height: 220vh;
+    overflow: hidden;
+    /* background-attachment: fixed; */
+    /* padding-top: 5%; */
+    text-align: center;
+    margin: 0 auto;
+}
+#works > .bg {
+    /* width: 100%; */
+    height: 100%;
+    background-image: url('../images/bg.jpg');
+    background-attachment: fixed;
+}
+#works [class^=col] {
+    /* outline: 1px solid red; */
+}
+#works .col-lg-12 {
+    height: 130px;
+}
+#works img {
+    width: 100%;
+}
+#works h1 {
+    color: #fff;
+    font-size: 28px;
+}
+#works span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 28px;
+}
+#works .btn {
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    background: #000;
+    border: 1px solid #fff;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+}
+#works .btn:hover {
+    color: #000;
+    background: #fff;
+    transition-duration: 0.4s;
+}
+#works .row {
+    margin-bottom: 50px;
+}
+#works .mobile img {
+    width: 60%;
+}
+#works #arrow > img {
+    position: absolute;
+    width: 6.25vw;
+    left: 20px;
+    bottom: 25px;
+}
+#works #arrow > p {
+    position: absolute;
+    color: #fff;
+    font-size: 3.125vw;
+    bottom: 15px;
+    left: 9.1145vw;
+}
+#works #arrow {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes arrow {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width: 767px) {
+    #left_header > #gnb > li:hover > a {
+        border-bottom: 1px solid #888;
+    }
+    #about {
+        width: 84.375vw;
+        height: 0;
+        padding-bottom: 170%;
+    }
+    #chart li span {
+        left: 50%; top: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+    }
+    #works span,
+    #works h1 {
+        font-size: 20px;
+    }
+    #works .btn {
+        width: 160px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    #works {
+        height: 310vh;
+    }
+    #works #arrow > img {
+        left: 10px;
+    }
+    #works .row {
+        margin-bottom: 0;
+    }
+    #works .col-lg-12 {
+        height: 20px;
+    }
+    #chart li {
+        padding: 0;
+    }
+    #chart .col-sm-2 {
+        padding-left: 0;
+    }
+    #about {
+        padding-bottom: 220%;
+    }
+    #about marquee {
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    #about {
+        width: 84.375vw;
+        height: 0;
+        padding-bottom: 70%;
+    }
+    #works span,
+    #works h1 {
+        font-size: 20px;
+    }
+    #works .btn {
+        font-size: 16px;
+    }
+    #works img {
+        width: 80%;
+    }
+    #works .btn {
+        width: 160px;
+        height: 40px;
+        line-height: 40px;
+    }
+    #works {
+        height: 150vh;
+    }
+    #works .col-lg-12 {
+        height: 50px;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    #about {
+        width: 84.375vw;
+        height: 0;
+        padding-bottom: 70%;
+    }
+    #works span,
+    #works h1 {
+        font-size: 24px;
+    }
+    #works img {
+        width: 80%;
+    }
+    #works {
+        height: 190vh;
+    }
+    #works .col-lg-12 {
+        height: 70px;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1920px) {
+    #about {
+        width: 84.375vw;
+        height: 0;
+        padding-bottom: 55%;
+    }
+    #works span,
+    #works h1 {
+        font-size: 24px;
+    }
+    #works {
+        height: 230vh;
+    }
+}

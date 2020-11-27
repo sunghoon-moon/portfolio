@@ -1,0 +1,271 @@
+/* works_mobile.css */
+#style_guide {
+    position: relative;
+    width: 100%;
+    height: 450vh;
+    background: #000;
+    overflow: hidden;
+}
+#style_guide > .main > img {
+    position: absolute;
+    width: 16.302vw;
+    left: 45.7708vw;
+    top: 15vh;
+}
+#style_guide > .main > .text {
+    position: absolute;
+    left: 13.2291vw;
+    top: 25vh;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#style_guide > .main > .text > h1 {
+    font-size: 2.5vw;
+}
+#style_guide > .main > .text > h1.name {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#style_guide > .main > .text > .first {
+    font-size: 1.25vw;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#style_guide > .main > .text > .second {
+    font-size: 0.9375vw;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#style_guide > .main > .text > .btn {
+    display: block;
+    width: 10.4166vw;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    background: #000;
+    border: 1px solid #fff;
+    font-size: 0.9375vw;
+    font-weight: 500;
+    text-align: center;
+    transition-duration: 0.4s;
+    padding: 0;
+    border-radius: 0;
+}
+#style_guide > .main > .text > .btn:hover {
+    color: #000;
+    background: #fff;
+    transition-duration: 0.4s;
+}
+
+#style_guide > .description {
+    position: relative;
+}
+#style_guide > .description > .style1 {
+    position: absolute;
+    width: 52.0833vw;
+    left: 30.4166vw;
+    top: 108.8297vh;
+}
+/* #style_guide > .description > .style2 {
+    position: absolute;
+    width: 52.0833vw;
+    top: 162vh;
+} */
+#style_guide > .description > .after {
+    position: absolute;
+    width: 21.1458vw;
+    left: 41.875vw;
+    top: 160vh;
+}
+#style_guide > .description > .wireframe {
+    position: absolute;
+    width: 21.1458vw;
+    left: 20vw;
+    top: 160vh;
+    /* opacity: 0.7; */
+}
+#style_guide > .description > h1 {
+    position: absolute;
+    margin: 0;
+    color: #fff;
+    left: 2vw;
+    top: 110vh;
+    font-size: 2.5vw;
+}
+#style_guide > .description > p {
+    position: absolute;
+    margin: 0;
+    color: #fff;
+    left: 2vw;
+    top: 120vh;
+    font-size: 1.25vw;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* arrow */
+#style_guide #arrow > img {
+    position: absolute;
+    width: 6.25vw;
+    left: 20px;
+    bottom: 25px;
+}
+#style_guide #arrow > p {
+    position: absolute;
+    color: #fff;
+    font-size: 3.125vw;
+    bottom: 15px;
+    left: 9.1145vw;
+}
+#style_guide #arrow {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes arrow {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width: 767px) {
+    #style_guide > .main > .text {
+        left: 12vw;
+        top: 25vh;
+    }
+    #style_guide > .main > img {
+        left: 33.5vw;
+        top: 5vh;
+    }
+    #style_guide > .main > .text > h1 {
+        font-size: 16px;
+    }
+    #style_guide > .main > .text > .first,
+    #style_guide > .main > .text > .second {
+        font-size: 12px;
+    }
+    #style_guide > .main > .text > .btn {
+        height: 25px;
+        line-height: 25px;
+        width: 80px;
+    }
+    #style_guide > .description {
+        top: 23vh;
+    }
+    #style_guide > .description > .style1 {
+        display: none;
+        left: 30.4166vw;
+        top: 50vh;
+    }
+    #style_guide > .description > .style2 {
+        display: none;
+        top: 64vh;
+    }
+    #style_guide > .description > .after {
+        width: 101.3vw;
+        left: -8.3vw;
+        top: 60vh;
+    }
+    #style_guide > .description > .wireframe {
+        display: none;
+        left: 3vw;
+        top: 184vh;
+    }
+    #style_guide {
+        height: 450vh;
+    }
+    #style_guide #arrow > img {
+        left: 10px;
+    }
+    #style_guide > .description > h1 {
+        left: 12vw;
+        top: 45vh;
+        font-size: 14px;
+    }
+    #style_guide > .description > p {
+        left: 12vw;
+        top: 50vh;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    #style_guide > .main > .text {
+        top: 15vh;
+    }
+    #style_guide > .main > .text > .btn {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #style_guide > .description > .style1 {
+        left: 30.4166vw;
+        top: 60vh;
+    }
+    #style_guide > .description > .style2 {
+        top: 88vh;
+    }
+    #style_guide > .description > .after {
+        left: 41.875vw;
+        top: 88vh;
+    }
+    #style_guide > .description > .wireframe {
+        left: 20vw;
+        top: 88vh;
+    }
+    #style_guide {
+        height: 240vh;
+    }
+    #style_guide > .description > h1 {
+        left: 2vw;
+        top: 65vh;
+    }
+    #style_guide > .description > p {
+        left: 2vw;
+        top: 70vh;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    #style_guide > .main > .text {
+        top: 20vh;
+    }
+    #style_guide > .main > .text > .btn {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    #style_guide > .description > .style1 {
+        left: 30.4166vw;
+        top: 65vh;
+    }
+    #style_guide > .description > .style2 {
+        top: 98vh;
+    }
+    #style_guide > .description > .after {
+        left: 41.875vw;
+        top: 100vh;
+    }
+    #style_guide > .description > .wireframe {
+        left: 20vw;
+        top: 100vh;
+    }
+    #style_guide {
+        height: 285vh;
+    }
+    #style_guide > .description > h1 {
+        left: 2vw;
+        top: 70vh;
+    }
+    #style_guide > .description > p {
+        left: 2vw;
+        top: 77vh;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1920px) {
+    
+}
