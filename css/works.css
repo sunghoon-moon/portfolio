@@ -139,7 +139,7 @@
 /* 미디어쿼리 */
 @media screen and (max-width: 767px) {
     #style_guide > .main > img {
-        left: 21.7708vw;
+        left: 28vw;
         top: 5vh;
     }
     #style_guide > .main > .text {
@@ -172,8 +172,8 @@
         top: 64vh;
     }
     #style_guide > .description > .after {
-        width: 92vw;
-        left: -4.5vw;
+        width: 100vw;
+        left: 0vw;
         top: 65vh;
     }
     #style_guide > .description > .before {
@@ -183,6 +183,10 @@
     }
     #style_guide {
         height: 210vh;
+        margin-top: 50px;
+    }
+    #style_guide #arrow {
+        display: none;
     }
     #style_guide #arrow > img {
         left: 10px;

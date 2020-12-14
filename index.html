@@ -31,7 +31,7 @@
 </head>
 <body>
     <header id="left_header">
-        <h1 class="logo"><a href="#introduce">MSH</a></h1>
+        <a class="logo" href="#introduce">MSH</a>
         <ul id="gnb">
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#works">WORKS</a></li>
@@ -42,12 +42,15 @@
             <a class="phone" href="tel:01067715736">01067715736</a>
             <a class="instagram" href="#">INSTAGRAM</a>
         </div>
-        <div class="mobile">
-            <a class="email" href="mailto:msh931006@gmail.com"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i></a>
-            <a class="phone" href="tel:01067715736"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i></a>
-            <a class="instagram" href="#"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a>
-        </div>
     </header>
+
+    <!-- contact popup -->
+    <div class="popup">
+        <a class="email" href="mailto:msh931006@gmail.com"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i>&nbsp;msh931006@gmail.com</a><br>
+        <a class="phone" href="tel:01067715736"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i>&nbsp;01067715736</a><br>
+        <a class="instagram" href="#"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i>&nbsp;anstjdgns</a>
+        <button class="btn_close">X</button>
+    </div>
     
     <div class="wrapper">
         <section id="introduce" class="mouse-dir" data-dir="">
@@ -162,6 +165,7 @@
     </div>
 
     <script>
+        // aos
         AOS.init({
             once: true
         });

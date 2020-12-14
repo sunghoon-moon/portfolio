@@ -1,32 +1,14 @@
 // main.js
 
-// profile chart
-option = {
-    animate:{
-        duration: 1500, // 애니메이션 시간
-        enabled: true
-    },
-    barColor:'#000',  // 바 색상
-    scaleColor: false,
-    lineWidth: 15,  // 선두께
-    lineCap:'square',  //  선끝 모양
-    size: 140  // 크기
-}; 
-
-$(window).scroll(function(){
-    var scrollValue = $(document).scrollTop(); 
-    // console.log(scrollValue); 
-    if (scrollValue >= 900) {
-        $(function() {
-            $('.chart1').easyPieChart(option); 
-            $('.chart2').easyPieChart(option); 
-            $('.chart3').easyPieChart(option); 
-            $('.chart4').easyPieChart(option); 
-            $('.chart5').easyPieChart(option); 
-            $('.chart6').easyPieChart(option); 
-        });
-    };
-});
+// contact popup
+$(function(){
+    $('#left_header > #gnb > li:last').click(function(){
+        $('.popup').show();
+    })
+    $('.popup > .btn_close').click(function(){
+        $('.popup').hide();
+    })
+})
 
 // profile typing txt
 $(window).ready(function() {
@@ -97,5 +79,30 @@ $(window).ready(function() {
     }  
   });
 
+// profile chart
+option = {
+    animate:{
+        duration: 1500, // 애니메이션 시간
+        enabled: true
+    },
+    barColor:'#000',  // 바 색상
+    scaleColor: false,
+    lineWidth: 15,  // 선두께
+    lineCap:'square',  //  선끝 모양
+    size: 140  // 크기
+}; 
 
-  
+$(window).scroll(function(){
+    var scrollValue = $(document).scrollTop(); 
+    // console.log(scrollValue); 
+    if (scrollValue >= 900) {
+        $(function() {
+            $('.chart1').easyPieChart(option); 
+            $('.chart2').easyPieChart(option); 
+            $('.chart3').easyPieChart(option); 
+            $('.chart4').easyPieChart(option); 
+            $('.chart5').easyPieChart(option); 
+            $('.chart6').easyPieChart(option); 
+        });
+    };
+});

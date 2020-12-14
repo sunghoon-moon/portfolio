@@ -114,6 +114,9 @@
     font-size: 18px;
 }
 
+#about > .works {
+    width: 100%;
+}
 #about > .works > marquee {
     font-size: 7.2916vw;
     width: 84.375vw;
@@ -227,8 +230,11 @@
     #left_header > #gnb > li:hover > a {
         border-bottom: 1px solid #888;
     }
+    #introduce {
+        margin-top: 50px;
+    }
     #about {
-        width: 84.375vw;
+        width: 100vw;
         height: 0;
         padding-bottom: 170%;
     }
@@ -249,7 +255,7 @@
         margin-bottom: 30px;
     }
     #works {
-        height: 310vh;
+        height: 340vh;
     }
     #works #arrow > img {
         left: 10px;
@@ -269,8 +275,12 @@
     #about {
         padding-bottom: 220%;
     }
-    #about marquee {
+    #about > .works > marquee {
         margin-top: 30px;
+        width: 100%;
+    }
+    #arrow {
+        display: none;
     }
 }
 @media screen and (min-width:768px) and (max-width:992px) {

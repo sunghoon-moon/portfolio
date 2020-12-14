@@ -141,7 +141,7 @@
         top: 25vh;
     }
     #style_guide > .main > img {
-        left: 33.5vw;
+        left: 40vw;
         top: 5vh;
     }
     #style_guide > .main > .text > h1 {
@@ -169,8 +169,8 @@
         top: 64vh;
     }
     #style_guide > .description > .after {
-        width: 101.3vw;
-        left: -8.3vw;
+        width: 100vw;
+        left: 0vw;
         top: 60vh;
     }
     #style_guide > .description > .wireframe {
@@ -179,7 +179,11 @@
         top: 184vh;
     }
     #style_guide {
-        height: 450vh;
+        height: 440vh;
+        margin-top: 50px;
+    }
+    #style_guide #arrow {
+        display: none;
     }
     #style_guide #arrow > img {
         left: 10px;

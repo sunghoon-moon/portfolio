@@ -35,16 +35,16 @@ a {
 }
 #left_header > .logo {
     margin: 0;
-    padding-top: 5px;
+    padding-top: 0px;
     padding-left: 10px;
-    width: 100%;
-    height: 51px;
-    z-index: 9;
-}
-#left_header > .logo > a {
+    /* width: 100%; */
+    /* height: 51px; */
     text-decoration: none;
     font-size: 2.5vw;
     font-weight: 700;
+    z-index: 9;
+    text-decoration: none;
+    color: #000;
 }
 #left_header > .logo:hover > a {
     color: #000;
@@ -104,48 +104,77 @@ a {
     left: 1.0416vw;
     bottom: 5vh;
 }
-#left_header > .mobile {
+.popup {
     display: none;
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 551px);
 }
-#left_header > .mobile > a {
-    position: absolute;
-    /* display: block; */
-}
-#left_header > .mobile > .email {
-    left: calc(50% - 7px);
-    bottom: 10vh;
-}
-#left_header > .mobile > .phone {
-    left: calc(50% - 6px);
-    bottom: 6vh
-}
-#left_header > .mobile > .instagram {
-    left: calc(50% - 6px);
-    bottom: 3vh;
-}
+
+
 
 /* 미디어 쿼리 */
 @media screen and (max-width: 767px) {
+    #left_header > .logo {
+        position: absolute;
+        line-height: 50px;
+        font-size: 4vw;
+    }
+    #left_header > #gnb {
+        width: 100%;
+        height: 50px;
+    }
     #left_header > .contact {
         display: none;
     }
-    #left_header > .mobile {
-        display: block;
-    }
     .wrapper {
-        margin-left: 15.625vw;
-        width: 84.375vw;
+        /* margin-left: 15.625vw; */
+        width: 100vw;
+        margin-left: 0;
     }
     #left_header {
         position: fixed;
-        width: 15.625vw;
-        height: 100vh;
+        /* width: 15.625vw; */
+        width: 100%;
+        /* height: 100vh; */
+        height: 50px;
         overflow: hidden;
         background: #fff;
-        border-right: 1px solid #000;
+        border: none;
+        border-bottom: 1px solid #000;
         z-index: 9;
+    }
+    #left_header > #gnb > li:first-child {
+        top: 0;
+        left: 40vw;
+        line-height: 50px;
+    }
+    #left_header > #gnb > li:nth-child(2) {
+        top: 0vh;
+        left: 60vw;
+        line-height: 50px;
+    }
+    #left_header > #gnb > li:last-child {
+        top: 0vh;
+        left: 80vw;
+        line-height: 50px;
+    }
+    .popup {
+        position: fixed;
+        top: 5%;
+        left: 25%;
+        display: block;
+        width: 250px;
+        height: 90px;
+        background: #fff;
+        border: 1px solid #000;
+        padding: 10px;
+        z-index: 99;
+        display: none;
+    }
+    .popup > .btn_close {
+        position: absolute;
+        border: none;
+        background: #fff;
+        top: 5px;
+        right: 10px;
+        font-size: 20px;
     }
 }
