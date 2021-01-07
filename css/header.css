@@ -52,7 +52,7 @@ a {
 #left_header > #gnb {
     position: relative;
     width: calc(15.625vw - 17px);
-    height: 500px;
+    height: 700px;
 }
 #left_header > #gnb > li {
     position: absolute;
@@ -81,7 +81,7 @@ a {
 #left_header > .contact {
     position: relative;
     width: 100%;
-    height: calc(100vh - 551px);
+    height: calc(100vh - 751px);
 }
 #left_header > .contact > a {
     position: absolute;
